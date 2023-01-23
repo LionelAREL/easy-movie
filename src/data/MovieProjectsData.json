@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "name":"name test",
+        "description": "description test",
+        "type": "auto"
+    },
+    {
+        "id":2,
+        "name":"name test2",
+        "description": "description test",
+        "type": "editor"
+    }
+]
