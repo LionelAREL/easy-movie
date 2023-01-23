@@ -13,12 +13,17 @@ type Props = {
 };
 const MovieProjectForm = ({onSubmit,children,buttonText,updateVideo}:Props) => {
 
-    const defaultValues = updateVideo ? {
+    
+    const defaultValues = updateVideo !== undefined ? {
         defaultValues: {
           name: updateVideo.name,
           description: updateVideo.description
         }
       } : {}
+
+    React.useEffect(() => {
+        
+    },[])
 
     const { register, handleSubmit, formState: { errors } } = useForm<any>(defaultValues);
 
